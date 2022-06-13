@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello socket.io</title>
+  </head>
+  <script src="/socket.io/socket.io.js"></script>
+  <body>
+    <script>
+      const socket = io();
+      socket.on('notification', (data) => {
+        alert(data);
+      });
+    </script>
+  </body>
+</html>
